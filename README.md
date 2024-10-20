@@ -7,7 +7,14 @@
 ## Ejecutar en Dev
 1. Clone el repositorio
 2. Instale las dependencias con `npm install`
-3. Levantar la base de datos con `docker-compose up -d`
-4. Generar el archivo `.env` con las variables de entorno
+3. Generar el archivo `.env` con las variables de entorno
+4. Levantar la base de datos con `docker-compose up -d`
 5. Generar el Prisma client con `npx prisma generate`
 6. Ejecutar el proyecto con `npm run start:dev`
+
+### Restaurar la base de datos 
+1. Abrir localhost:8080 en el navegador `pgadmin`
+2. Ingresar con las credenciales del archivo `.docker-compose.yml`
+3. Crear un nuevo servidor con las credenciales del archivo `.docker-compose.yml`
+4. Crear una nueva base de datos con el nombre `postgres`
+5. Restaurar la base de datos con el archivo `data/employees.sql`

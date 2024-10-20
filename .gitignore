@@ -5,7 +5,6 @@
 /postgres
 /pgadmin
 
-
 # Logs
 logs
 *.log
